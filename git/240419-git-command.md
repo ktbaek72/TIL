@@ -62,7 +62,83 @@ $ git commit
 
 $ git diff main.py
 
+# 원격 github에 변경 내용 올리기
 
+$ git push origin main
+
+# 간단 log 보기
+
+$ git lg
+
+# LF 경고 처리
+# $ git add main.py
+# warning: in the working copy of 'main.py', LF will be replaced by CRLF the next time Git touches it
+
+$ git config --global core.autocrlf false
+
+# version
+
+$ node -v
+v20.12.2
+
+$ npm -v
+10.5.0
+
+# hexo update
+
+$ npm install -g hexo-cli
+
+# blogging : Start blogging with Hexo!
+
+$ hexo init ghblog
+
+# 추가 update
+
+$ npm install
+
+# 
+
+$ hexo clean
+INFO  Validating config
+
+# Generate static files
+
+$ hexo generate
+
+# Run server
+
+$ hexo server
+
+# Create a new post
+
+$ hexo new post "My First Blog"
+
+
+# 현재 폴더가 Editor(vscode)에서 열림
+
+$ code .
+
+# clean and generate 명령을 아래와 같이 한번에 하기
+
+$ hexo clean && hexo generate
+
+# 블로그 테마 install
+
+$ npm install hexo-theme-next@latest
+
+# deploy install
+
+$ npm install hexo-deployer-git --save
+
+# Deploy to remote sites  
+
+$ vi _config.yml
+
+$ hexo deploy
+
+# git clone
+
+git clone https://github.com/ktbaek72/TIL.git
 
 
 
